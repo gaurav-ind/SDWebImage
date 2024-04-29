@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.source_files = 'SDWebImage/Core/*.{h,m}', 'WebImage/SDWebImage.h', 'SDWebImage/Private/*.{h,m}'
     core.private_header_files = 'SDWebImage/Private/*.h'
-    core.resource_bundles = {'SDWebImagePrivacy' => [.copy("Resources/PrivacyInfo.xcprivacy")]}
+    core.resource_bundles = {'SDWebImagePrivacy' => ["Resources/PrivacyInfo.xcprivacy"]}
   end
 
   s.subspec 'MapKit' do |mk|
